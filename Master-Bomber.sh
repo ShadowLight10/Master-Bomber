@@ -25,13 +25,13 @@ pause() {
 banner() {
     clear
     if [[ "$OSTYPE" == "linux-gnu" ]]; then
-    toilet -f ivrit 'Navin H' | boxes -d cat -a hc -p h8 | lolcat
+    toilet -f ivrit 'SHADOW' | boxes -d cat -a hc -p h8 | lolcat
     else
-    cowsay 'Navin H' | lolcat
+    cowsay 'SHADOW' | lolcat
     fi
-    echo 'This Bomber Was Created By Navin' | lolcat
+    echo 'This Bomber Was Created By SHADOW LIGHT' | lolcat
     echo 'For Any Queries Contact Me!!!'| lolcat
-    echo 'Intagram:- navin_hariharan'| lolcat
+    echo 'Telegram:- @shadowlight9'| lolcat
     echo ' '| lolcat
     echo 'Please use for Educational Purpose only!!!'| lolcat
     echo ' '| lolcat
@@ -129,7 +129,7 @@ else
     echo .
     $PYTHON version_check.py || $PYTHON Core/version_check.py
     install_deps
-    echo 'This Script Was Made By Navin Hariharan' > .update
+    echo 'This Script Was Made By SHADOW LIGHT' > .update
     echo 'Requirements Installed....'
     set_alias
     pause
@@ -194,10 +194,9 @@ do
 	echo -e "\e[1;31m I Am Not Responsible For The Misuse Of The Script. \e[0m"| lolcat
 	echo  " "
 	echo -e "\e[4;31m That's All !!!\e[0m"| lolcat
-	echo -e "\e[4;34m This Bomber Was Created By Navin \e[0m" | lolcat
+	echo -e "\e[4;34m This Bomber Was Created By SHADOW LIGHT \e[0m" | lolcat
 	echo -e "\e[1;34m For Any Queries Contact Me!!!\e[0m"| lolcat
-	echo -e "\e[1;32m   Intagram:- navin_hariharan\e[0m"| lolcat
-	echo -e "\e[4;32m   Whatsapp: +917305574234 \e[0m"| lolcat
+	echo -e "\e[1;32m   Telegram:- @shadowlight9\e[0m"| lolcat
         exit
     elif [ $ch -eq 0 ];then
         banner
