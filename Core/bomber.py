@@ -60,7 +60,7 @@ class MessageDecorator(object):
 class APIProvider:
 
     api_providers=[]
-    delay = 3
+    delay = 1
     status = True
 
     def __init__(self,cc,target,mode,delay=0):
@@ -220,7 +220,7 @@ def selectnode(mode="sms"):
     mode=mode.lower().strip()
     try:
         check_intr()
-        max_limit={"sms":100,"call":100}
+        max_limit={"sms":100000000000000000000000000000000000,"call":100000000000000000000000000000000000}
         cc,target="",""
         if mode in ["sms","call"]:
             cc,target=get_phone_info()
