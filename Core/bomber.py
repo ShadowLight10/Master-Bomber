@@ -60,7 +60,7 @@ class MessageDecorator(object):
 class APIProvider:
 
     api_providers=[]
-    delay = 1
+    delay = 3
     status = True
 
     def __init__(self,cc,target,mode,delay=0):
@@ -169,14 +169,14 @@ def get_phone_info():
         return (cc,target)
 def pretty_print(cc,target,success,failed):
     requested = success+failed
-    mesgdcrt.SectionMessage("Bombing is in progress - Please be patient")
+    mesgdcrt.SectionMessage("Bombing is in progress - Please be patient till then join our telegram group @techlightarmy")
     mesgdcrt.GeneralMessage("Please stay connected to the internet during bombing")
     mesgdcrt.GeneralMessage("Target       : " + cc +" "+ target)
     mesgdcrt.GeneralMessage("Sent         : " + str(requested))
     mesgdcrt.GeneralMessage("Successful   : " + str(success))
     mesgdcrt.GeneralMessage("Failed       : " + str(failed))
     mesgdcrt.WarningMessage("This tool was made for fun and research purposes only")
-    mesgdcrt.SuccessMessage("Master-Bomber was created by Navin Hariharan")
+    mesgdcrt.SuccessMessage("Master-Bomber was created by SHADOW LIGHT")
 def workernode(mode,cc,target,count,delay,max_threads):
 
     api = APIProvider(cc,target,mode,delay=delay)
@@ -220,7 +220,7 @@ def selectnode(mode="sms"):
     mode=mode.lower().strip()
     try:
         check_intr()
-        max_limit={"sms":1000000,"call":1000000}
+        max_limit={"sms":100,"call":100}
         cc,target="",""
         if mode in ["sms","call"]:
             cc,target=get_phone_info()
